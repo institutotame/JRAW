@@ -13,6 +13,7 @@ public abstract class SubredditSearchResult implements Serializable {
     @Json(name = "active_user_count") public abstract int getActiveUserCount();
 
     /** A full URL that points to the subreddit's icon */
+    @Nullable
     @Json(name = "icon_img") public abstract String getIconUrl();
 
     /** A hex color with the "#" included, or an empty string */
